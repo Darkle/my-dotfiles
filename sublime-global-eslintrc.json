@@ -51,7 +51,7 @@
       "last"
     ],
     "comma-dangle": 0,
-    "curly": "error",
+    "curly": ["error", "multi-line"],
     "eqeqeq": "error",
     "generator-star-spacing": [
       "error",
