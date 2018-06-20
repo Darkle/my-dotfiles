@@ -10,7 +10,7 @@
   "freeze": true,
   "globals": {},
   "jquery": true,
-  "latedef": true,
+  "latedef": "func",
   "node": true,
   "strict": "implied",
   "undef": true,
