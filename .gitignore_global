@@ -476,3 +476,5 @@ paket-files/
 
 # Yeoman
 .yo-rc.json
+
+.openode
