@@ -19,7 +19,7 @@ module.exports = {
     'fp'
   ],
   rules: {
-    '@lightscript/unnecessary-comma': 0,
+    '@lightscript/no-unnecessary-comma': 0,
     '@lightscript/match-requires-else': 'error',
     '@lightscript/no-implicit-imports': 'error',
     'accessor-pairs': 'error',
