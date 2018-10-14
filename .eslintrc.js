@@ -24,9 +24,6 @@ module.exports = {
     '@lightscript/no-implicit-imports': 'error',
     'accessor-pairs': 'error',
     'block-scoped-var': 'error',
-    'brace-style': [
-      'warn', 'stroustrup'
-    ],
     'callback-return': 'error',
     'comma-style': [
       'error',
@@ -45,7 +42,6 @@ module.exports = {
     'fp/no-mutation': 'error',
     'fp/no-nil': 'error',
     'fp/no-proxy': 'error',
-    'fp/no-rest-parameters': 'error',
     'fp/no-this': 'error',
     'fp/no-throw': 'error',
     'fp/no-valueof-field': 'error',
