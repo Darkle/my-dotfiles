@@ -5,7 +5,8 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:@lightscript/recommended'
+    'plugin:@lightscript/recommended',
+    'plugin:security/recommended'
   ],
   globals: {
     ISDEV: true
@@ -16,7 +17,8 @@ module.exports = {
   },
   plugins: [
     '@lightscript/eslint-plugin',
-    'fp'
+    'fp',
+    'security'
   ],
   rules: {
     '@lightscript/no-unnecessary-comma': 0,
