@@ -47,6 +47,7 @@ module.exports = {
     'fp/no-this': 'error',
     'fp/no-throw': 'error',
     'fp/no-valueof-field': 'error',
+    'security/detect-object-injection': 0,
     'guard-for-in': 'error',
     'handle-callback-err': 'error',
     'key-spacing': [
