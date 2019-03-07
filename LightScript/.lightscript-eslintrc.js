@@ -201,7 +201,7 @@ module.exports = {
     'prefer-template': 'error',
     'quotes': [
       'error',
-      'double',
+      'single',
       {
         avoidEscape: true,
         allowTemplateLiterals: true,
