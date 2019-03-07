@@ -4,9 +4,7 @@ module.exports = {
       '@lightscript',
       {
         env: {
-          targets: {
-            node: 10
-          }
+          targets: { node: 10 }
         },
         stdlib: false,
       }
