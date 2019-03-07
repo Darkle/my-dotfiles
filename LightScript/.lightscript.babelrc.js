@@ -1,14 +1,12 @@
 module.exports = {
-  "presets": [
+  presets: [
     [
-      "@lightscript",
+      '@lightscript',
       {
-        "env": {
-          "targets": {
-            "node": 10
-          }
+        env: {
+          targets: { node: 10 }
         },
-        "stdlib": false,
+        stdlib: false,
       }
     ]
   ]
