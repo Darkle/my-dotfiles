@@ -1,4 +1,7 @@
 module.exports = {
+  ignore: [
+    "node_modules",
+  ],  
   presets: [
     [
       '@lightscript',
