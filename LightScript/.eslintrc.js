@@ -149,7 +149,6 @@ module.exports = {
     'no-undefined': 'error',
     'no-undef-init': 'error',
     'no-unneeded-ternary': 'error',
-    'no-use-before-define': 'error',
     'no-useless-call': 'error',
     'no-useless-catch': 'error',
     'no-useless-constructor': 'error',
