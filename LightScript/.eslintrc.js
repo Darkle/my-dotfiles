@@ -32,13 +32,6 @@ module.exports = {
   rules: {
     'accessor-pairs': 'error',
     'array-callback-return': 'error',
-    'arrow-spacing': [
-      'error',
-      {
-        before: true,
-        after: true,
-      }
-    ],
     'block-scoped-var': 'error',
     'callback-return': 'error',
     'class-methods-use-this': 'error',
