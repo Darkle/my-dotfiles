@@ -42,7 +42,7 @@ module.exports = {
     'block-scoped-var': 'error',
     'callback-return': 'error',
     'class-methods-use-this': 'error',
-    'complexity': ['error', 2],
+    'complexity': ['error', 3],
     'comma-spacing': ['error', {
       before: false,
       after: true
@@ -154,7 +154,6 @@ module.exports = {
     'no-script-url': 'error',
     'no-template-curly-in-string': 'error',
     'no-throw-literal': 'error',
-    'no-trailing-spaces': 'error',
     'no-undefined': 'error',
     'no-undef-init': 'error',
     'no-unneeded-ternary': 'error',
