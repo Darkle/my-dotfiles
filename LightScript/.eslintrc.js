@@ -173,7 +173,6 @@ module.exports = {
     'no-with': 'error',
     'no-whitespace-before-property': 'error',
     'nonblock-statement-body-position': ['error', 'beside'],
-    'object-property-newline': 'error',
     'object-shorthand': 'error',
     'operator-assignment': ['error', 'never'],
     'prefer-const': 'error',
@@ -211,6 +210,7 @@ module.exports = {
     'require-await': 'error',
     'require-unicode-regexp': 'error',
     'rest-spread-spacing': ['error', 'never'],
+    'security/detect-object-injection': 'off',
     'semi': [
       'error',
       'never',
