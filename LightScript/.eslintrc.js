@@ -183,7 +183,6 @@ module.exports = {
         array: false
       }
     ],
-    'prefer-named-capture-group': 'error',
     'prefer-object-spread': 'error',
     'prefer-promise-reject-errors': 'error',
     'prefer-rest-params': 'error',
@@ -214,9 +213,6 @@ module.exports = {
     'semi': [
       'error',
       'never',
-      {
-        beforeStatementContinuationChars: 'always'
-      }
     ],
     'semi-spacing': 'error',
     'space-infix-ops': 'error',
