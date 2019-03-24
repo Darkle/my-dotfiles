@@ -20,7 +20,8 @@ module.exports = {
   ],
   globals: {
     ISDEV: true,
-    hybrids: true,
+    axios: true,
+    _: true,
   },
   env: {
     node: true,
@@ -142,6 +143,7 @@ module.exports = {
     'no-undefined': 'error',
     'no-undef-init': 'error',
     'no-unneeded-ternary': 'error',
+    'no-unused-vars': ['error', {'args': 'after-used'}],
     'no-useless-call': 'error',
     'no-useless-catch': 'error',
     'no-useless-constructor': 'error',
