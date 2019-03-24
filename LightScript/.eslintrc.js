@@ -86,7 +86,7 @@ module.exports = {
         max: 1
       }
     ],
-    'new-cap': 'error',
+    'new-cap': ['error', {'capIsNew': false}],
     'new-parens': 'error',
     'no-alert': 'error',
     'no-array-constructor': 'error',
