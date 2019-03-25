@@ -20,8 +20,8 @@ module.exports = {
   ],
   globals: {
     ISDEV: true,
-    axios: true,
     _: true,
+    storedSubs: true,
   },
   env: {
     node: true,
@@ -201,7 +201,6 @@ module.exports = {
     ],
     'radix': 'error',
     'require-atomic-updates': 'error',
-    'require-await': 'error',
     'require-unicode-regexp': 'error',
     'rest-spread-spacing': ['error', 'never'],
     'security/detect-object-injection': 'off',
@@ -210,7 +209,6 @@ module.exports = {
       'never',
     ],
     'semi-spacing': 'error',
-    'space-infix-ops': 'error',
     'space-in-parens': ['error', 'never'],
     'symbol-description': 'error',
     'unicode-bom': 'error',
