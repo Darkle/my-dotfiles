@@ -169,7 +169,6 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'nonblock-statement-body-position': ['error', 'beside'],
     'object-shorthand': 'error',
-    'operator-assignment': ['error', 'never'],
     'prefer-const': 'error',
     'prefer-destructuring': [
       'error',
