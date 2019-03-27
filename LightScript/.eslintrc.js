@@ -20,7 +20,6 @@ module.exports = {
   ],
   globals: {
     ISDEV: true,
-    _: true,
     storedSubs: true,
   },
   env: {
@@ -60,14 +59,6 @@ module.exports = {
       }
     ],
     'jsx-quotes': ['error', 'prefer-double'],
-    'key-spacing': [
-      'error',
-      {
-        beforeColon: false,
-        afterColon: true,
-        mode: 'strict'
-      }
-    ],
     'max-classes-per-file': ['error', 1],
     'max-depth': ['error', 3],
     'max-lines-per-function': [
