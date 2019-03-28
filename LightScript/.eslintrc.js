@@ -21,6 +21,8 @@ module.exports = {
   globals: {
     ISDEV: true,
     storedSubs: true,
+    storedFolders: true,
+    Swiper: true,
   },
   env: {
     node: true,
@@ -46,7 +48,6 @@ module.exports = {
     'dot-notation': 'error',
     'eqeqeq': 'error',
     'func-call-spacing': ['error', 'never'],
-    'guard-for-in': 'error',
     'handle-callback-err': 'error',
     'indent': [
       'error',
@@ -71,12 +72,6 @@ module.exports = {
     'max-nested-callbacks': ['error', 3],
     'max-params': ['error', 4],
     'max-statements': ['error', 8],
-    'max-statements-per-line': [
-      'error',
-      {
-        max: 1
-      }
-    ],
     'new-cap': ['error', {'capIsNew': false}],
     'new-parens': 'error',
     'no-alert': 'error',
