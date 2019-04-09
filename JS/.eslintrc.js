@@ -9,8 +9,7 @@ module.exports = {
     }
   },
   extends: [
-    'eslint:recommended',
-    'plugin:security/recommended'
+    'eslint:recommended'
   ],
   globals: {
     ISDEV: true
@@ -24,8 +23,6 @@ module.exports = {
     greasemonkey: true,
   },
   plugins: [
-    'fp',
-    'security'
   ],
   rules: {
     'accessor-pairs': 'error',
