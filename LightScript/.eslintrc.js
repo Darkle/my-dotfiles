@@ -10,13 +10,10 @@ module.exports = {
     }
   },
   extends: [
-    'eslint:recommended',
-    'plugin:security/recommended',
+    'eslint:recommended'
   ],
   plugins: [
-    '@lightscript/eslint-plugin',
-    'fp',
-    'security'
+    '@lightscript/eslint-plugin'
   ],
   globals: {
     ISDEV: true,
