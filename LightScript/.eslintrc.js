@@ -12,14 +12,8 @@ module.exports = {
   extends: [
     'eslint:recommended'
   ],
-  plugins: [
-    '@lightscript/eslint-plugin'
-  ],
   globals: {
     ISDEV: true,
-    storedSubs: true,
-    storedFolders: true,
-    Swiper: true,
   },
   env: {
     node: true,
