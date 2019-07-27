@@ -1,5 +1,5 @@
 module.exports = {
-  parser: '@lightscript/eslint-plugin',
+  parser: '@oigroup/lightscript-eslint',
   parserOptions: {
     ecmaVersion: 10,
     sourceType: "module",
