@@ -25,6 +25,6 @@ module.exports = {
   plugins: [
   ],
   rules: {
-    "no-unused-vars": ["error", { "varsIgnorePattern": "^React$" }]
+
   }
 }
