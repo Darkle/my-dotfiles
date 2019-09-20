@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
     "lib": [
       "es2015"
