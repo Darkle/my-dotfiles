@@ -16,8 +16,8 @@
     "target": "ES2015",
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
-    "strictPropertyInitialization": true,
     "strictNullChecks": true,
+    "strictPropertyInitialization": true,
   },
   "include": [
     "./src/**/*",
