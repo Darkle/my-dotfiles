@@ -152,6 +152,7 @@ fabric.properties
 # JS Genaral #
 ######################
 bower_components
+.parcel-cache
 
 # Node #
 ######################
