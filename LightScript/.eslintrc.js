@@ -22,6 +22,7 @@ module.exports = {
     es6: true,
   },
   rules: {
+    '@lightscript/no-unnecessary-comma': 'off',
     'accessor-pairs': 'error',
     'array-callback-return': 'error',
     'block-scoped-var': 'error',

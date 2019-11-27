@@ -6,8 +6,6 @@ module.exports = {
         stdlib: {
           lodash: false
         },
-        noEnforcedSubscriptIndentation: true,
-        existential: true,
         env: {
           targets: {
             'chrome': 78,
