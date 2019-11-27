@@ -1,21 +1,27 @@
 module.exports = {
-  "presets": [
+  presets: [
     [
-      "@lightscript",
+      '@lightscript',
       {
-        "stdlib": {
-          "lodash": false
+        stdlib: {
+          lodash: false
         },
-        "noEnforcedSubscriptIndentation": true,
-        "existential": true
+        noEnforcedSubscriptIndentation: true,
+        existential: true,
+        env: {
+          targets: {
+            'chrome': 78,
+            'firefox': 70,
+          }
+        }
       }
     ]
   ],
-  "plugins": [
+  plugins: [
     [
-      "inline-replace-variables",
+      'inline-replace-variables',
       {
-        "ISDEV": process.env.NODE_ENV !== 'production'
+        ISDEV: process.env.NODE_ENV !== 'production'
       }
     ]
   ]
