@@ -1,27 +1,25 @@
 module.exports = {
-  parser: '@oigroup/lightscript-eslint',
+  parser: "@lightscript/eslint-plugin",
+  plugins: ["@lightscript/eslint-plugin"],
+  extends: [
+    "eslint:recommended",
+    "plugin:@lightscript/recommended"
+  ],
   parserOptions: {
-    ecmaVersion: 10,
     sourceType: "module",
+    ecmaVersion: 2019,
     ecmaFeatures: {
       globalReturn: true,
       impliedStrict: true,
-      jsx: true
     }
   },
-  extends: [
-    'eslint:recommended'
-  ],
   globals: {
-    ISDEV: true,
+    'ISDEV': 'readonly',
   },
   env: {
     node: true,
     browser: true,
-    'shared-node-browser': true,
     es6: true,
-    webextensions: true,
-    greasemonkey: true,
   },
   rules: {
     'accessor-pairs': 'error',
@@ -63,7 +61,7 @@ module.exports = {
     'max-nested-callbacks': ['error', 3],
     'max-params': ['error', 4],
     'max-statements': ['error', 8],
-    'new-cap': ['error', {'capIsNew': false}],
+    'new-cap': ['error', { 'capIsNew': false }],
     'new-parens': 'error',
     'no-alert': 'error',
     'no-array-constructor': 'error',
@@ -120,7 +118,7 @@ module.exports = {
     'no-undefined': 'error',
     'no-undef-init': 'error',
     'no-unneeded-ternary': 'error',
-    'no-unused-vars': ['error', {'args': 'after-used'}],
+    'no-unused-vars': ['error', { 'args': 'after-used' }],
     'no-useless-call': 'error',
     'no-useless-catch': 'error',
     'no-useless-constructor': 'error',

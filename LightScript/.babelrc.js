@@ -1,15 +1,21 @@
 module.exports = {
-  ignore: [
-    "node_modules",
-  ],  
-  presets: [
+  "presets": [
     [
-      '@lightscript',
+      "@lightscript",
       {
-        env: {
-          targets: { node: 10 }
+        "stdlib": {
+          "lodash": false
         },
-        stdlib: false,
+        "noEnforcedSubscriptIndentation": true,
+        "existential": true
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "inline-replace-variables",
+      {
+        "ISDEV": process.env.NODE_ENV !== 'production'
       }
     ]
   ]
