@@ -10,7 +10,9 @@ module.exports = {
           targets: {
             'chrome': 78,
             'firefox': 70,
-          }
+          },
+          useBuiltIns: false,
+          modules: false
         }
       }
     ]
