@@ -7,7 +7,9 @@ module.exports = {
           lodash: false
         },
         env: {
-          targets: 'last 1 Chrome version, last 1 firefox version'
+          targets: {
+            node: 12
+          }
         }
       }
     ]
