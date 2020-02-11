@@ -23,9 +23,6 @@ module.exports = {
     greasemonkey: true,
   },
   settings: {
-    react: {
-      pragma: "h"
-    }
   },
   plugins: [
     "react",
