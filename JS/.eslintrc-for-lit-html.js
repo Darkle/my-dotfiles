@@ -9,7 +9,8 @@ module.exports = {
     }
   },
   extends: [
-    'eslint:recommended'
+    'eslint:recommended',
+    'plugin:lit/all'
   ],
   globals: {
 
@@ -22,9 +23,9 @@ module.exports = {
     greasemonkey: true,
   },
   settings: {
-
   },
   plugins: [
+    'lit',
   ],
   rules: {
     'array-callback-return': 'error',
