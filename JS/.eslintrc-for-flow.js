@@ -1,5 +1,6 @@
 module.exports = {
-  parserOptions: {
+  parser: 'babel-eslint',
+    parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
@@ -10,6 +11,7 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'plugin:flowtype/recommended',
     'plugin:react/all'
   ],
   globals: {
@@ -28,6 +30,7 @@ module.exports = {
     }
   },
   plugins: [
+    'flowtype',
     'react',
     'react-hooks'
   ],
@@ -37,6 +40,34 @@ module.exports = {
     'complexity': ['error', 4],
     'consistent-return': 'error',
     'eqeqeq': 'error',
+    'flowtype/no-dupe-keys': 'error',
+    'flowtype/no-types-missing-file-annotation': 'error',
+    'flowtype/no-mutable-array': 'error',
+    'flowtype/no-primitive-constructor-types': 'error',
+    'flowtype/require-exact-type': [
+      'error',
+      'always'
+    ],
+    'flowtype/require-parameter-type': [
+        'error',
+        {
+          'excludeArrowFunctions': true
+        }
+    ],
+    'flowtype/require-readonly-react-props': 'error',
+    'flowtype/require-return-type': [
+        'error',
+        'always',
+        {
+          'excludeArrowFunctions': true
+        }
+    ],
+    'flowtype/require-valid-file-annotation': [
+      'error',
+      'always'
+    ],
+    'flowtype/space-after-type-colon': 'off',
+    'flowtype/spread-exact-type': 'error',
     'guard-for-in': 'error',
     'handle-callback-err': 'error',
     'max-depth': ['error', 3],
