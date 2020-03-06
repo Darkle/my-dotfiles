@@ -12,7 +12,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:flowtype/recommended',
-    'plugin:react/all'
+    'plugin:functional/all',
   ],
   globals: {
 
@@ -25,14 +25,10 @@ module.exports = {
     greasemonkey: true,
   },
   settings: {
-    react:{
-      version: 'detect'
-    }
   },
   plugins: [
     'flowtype',
-    'react',
-    'react-hooks'
+    'functional'
   ],
   rules: {
     'array-callback-return': 'error',
@@ -68,6 +64,8 @@ module.exports = {
     ],
     'flowtype/space-after-type-colon': 'off',
     'flowtype/spread-exact-type': 'error',
+    'functional/no-expression-statement': 'off',
+    'functional/functional-parameters': 'off',    
     'guard-for-in': 'error',
     'handle-callback-err': 'error',
     'max-depth': ['error', 3],
@@ -173,20 +171,6 @@ module.exports = {
       }
     ],
     'radix': 'error',
-    'react/jsx-filename-extension': [1, { 'extensions': ['.js', '.jsx', '.lsc', '.lsx'] }],
-    'react/jsx-indent': 'off',
-    'react/jsx-no-literals': 'off',
-    'react/jsx-one-expression-per-line': 'off',
-    'react/jsx-curly-newline': 'off',
-    'react/jsx-indent-props': 'off',
-    'react/jsx-sort-props': 'off',
-    'react/jsx-max-props-per-line': [1, { 'maximum': 2 }],
-    'react/jsx-max-depth': [1, { 'max': 4 }],
-    'react/jsx-no-bind': [1, { 'allowArrowFunctions': true, 'allowFunctions': true }],
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'error',
-    'react/no-did-update-set-state': 'error',
-    'react/no-unknown-property': 'off',
     'require-atomic-updates': 'error',
     'require-unicode-regexp': 'error',
     'rest-spread-spacing': ['error', 'never'],
