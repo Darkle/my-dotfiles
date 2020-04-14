@@ -490,12 +490,13 @@ Debug
 *.user
 obj
 bin
+.ionide
 
 # Paket dependency manager
 paket-files/
 
 # FAKE - F# Make
-.fake/
+.fake
 
 # Yeoman
 .yo-rc.json
