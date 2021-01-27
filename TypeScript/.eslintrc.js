@@ -1,7 +1,8 @@
+/* eslint-disable */
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2021,
     sourceType: 'module',
     ecmaFeatures: {
       globalReturn: true,
@@ -14,6 +15,7 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:functional/all',
+    'plugin:lit/all'
   ],
   globals: {
   },
@@ -54,7 +56,6 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': ['error', {'args': 'after-used', 'argsIgnorePattern': '_' }],
     '@typescript-eslint/no-use-before-define': ['error', { 'functions': false}],
     '@typescript-eslint/no-useless-constructor': 'error',
-    'no-useless-computed-key': 'error',
     '@typescript-eslint/no-magic-numbers': [
       'error',
       {
@@ -64,13 +65,16 @@ module.exports = {
         ignore: [-2, -1, 0, 1, 2, 3]
       }
     ],
+    'functional/no-conditional-statement': 'error',
+    'functional/no-expression-statement': ['error', {ignorePattern: ['html', 'console.log', 'render']}],
+    'functional/functional-parameters': 'error',
     'array-callback-return': 'error',
     'callback-return': 'error',
     'complexity': ['error', 4],
     'consistent-return': 'error',
     'eqeqeq': 'error',
-    'functional/immutable-data': ['error', {ignoreImmediateMutation: true}],    
-    'functional/no-promise-reject': 'off',      
+    'functional/immutable-data': ['error', {ignoreImmediateMutation: true}],
+    'functional/no-promise-reject': 'off',
     'guard-for-in': 'error',
     'handle-callback-err': 'error',
     'lit/attribute-value-entities': 'error',
@@ -144,6 +148,7 @@ module.exports = {
         ignoreDestructuring: true,
       }
     ],
+    'no-useless-computed-key': 'error',
     'no-useless-return': 'error',
     'no-var': 'error',
     'no-void': 'error',

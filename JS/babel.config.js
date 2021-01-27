@@ -5,7 +5,7 @@ module.exports = {
       '@babel/preset-env',
       {
         modules: false,
-        targets: 'firefox esr, last 3 Chrome versions'
+        targets: 'last 3 Chrome version, Firefox ESR, last 1 safari version, last 3 ios version'
       }
     ],
     '@babel/preset-react'

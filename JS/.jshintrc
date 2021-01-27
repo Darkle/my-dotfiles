@@ -2,7 +2,7 @@
   "asi": true,
   "browser": true,
   "browserify": true,
-  "curly": true,
+  "curly": false,
   "devel": true,
   "eqeqeq": true,
   "esversion": 9,
