@@ -8,7 +8,7 @@ module.exports = {
       impliedStrict: true,
     },
   },
-  extends: ['eslint:recommended', 'airbnb-base', 'xo/esnext'],
+  extends: ['eslint:recommended', 'airbnb-base', 'xo/esnext', 'plugin:functional/recommended'],
   globals: {},
   env: {
     node: true,
@@ -16,8 +16,10 @@ module.exports = {
     es2020: true,
   },
   settings: {},
-  plugins: ['extra-rules'],
+  plugins: ['functional', 'extra-rules'],
   rules: {
+    'functional/immutable-data': ['error', { ignoreImmediateMutation: true }],
+    'functional/prefer-tacit': 'error',
     'extra-rules/potential-point-free': 'error',
     complexity: ['error', 4],
     'eol-last': 'off',
