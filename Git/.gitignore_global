@@ -252,6 +252,8 @@ myvenv
 *.sqlite3
 *.so
 *.log
+.pdm.toml
+__pypackages__/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
